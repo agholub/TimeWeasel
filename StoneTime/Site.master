@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Time Weasel</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">                   
+                <asp:Image ID="logo" runat="server" ImageUrl="images/weasel.jpg" />
+            </div>
+            <div class="title" style="display:inline; vertical-align:middle;">
+            <h1>Time Weasel</h1> 
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/TimeEntry.aspx" Text="Home"/>
+                        <%--<asp:MenuItem NavigateUrl="~/manageUserPto.aspx" Text="My PTO"/>--%>
+                        <asp:MenuItem NavigateUrl="~/manageUser.aspx" Text="My Account"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+            <div id="adminMenu" class="clear hideSkiplink" >
+                <asp:Menu ID="NavigationMenuAdmin" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/manageProjects.aspx" Text="Projects"/>
+                        <asp:MenuItem NavigateUrl="~/manageClients.aspx" Text="Clients"/>
+                         <asp:MenuItem NavigateUrl="~/manageContacts.aspx" Text="Contacts"/>
+                         <asp:MenuItem NavigateUrl="~/manageUsers.aspx" Text="Users"/>
+                        <%--<asp:MenuItem NavigateUrl="~/managePto.aspx" Text="PTO"/>--%>
+                        <asp:MenuItem NavigateUrl="~/Reports.aspx" Text="Reports"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

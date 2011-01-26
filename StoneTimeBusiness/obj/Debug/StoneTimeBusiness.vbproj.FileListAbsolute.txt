@@ -1,0 +1,10 @@
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\StoneTimeBusiness.Resources.resources
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\GenerateResource.read.1.tlog
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\GenerateResource.write.1.tlog
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\bin\Debug\StoneTimeBusiness.dll
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\bin\Debug\StoneTimeBusiness.pdb
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\bin\Debug\StoneTimeBusiness.xml
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\StoneTimeBusiness.dll
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\StoneTimeBusiness.xml
+C:\Workspaces\StoneTimeBusiness\StoneTime\StoneTimeBusiness\obj\Debug\StoneTimeBusiness.pdb
